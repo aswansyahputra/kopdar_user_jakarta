@@ -1,0 +1,33 @@
+---
+title: "R+RStudio Tips and Tricks"
+subtitle: "Hidden gems for improving workflow efficency"  
+author: "Muhammad Aswan Syahputra"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
+)
+```
+
+# Learn R in R
+```
+install.packages("swirl")
+```
+
+# RStudio hidden gems
