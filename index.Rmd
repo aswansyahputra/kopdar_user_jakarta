@@ -29,5 +29,54 @@ solarized_dark(
 ```
 install.packages("swirl")
 ```
+# For repetitive
+```
+install.packages("usethis")
+```
+
+# R tips and tricks
+## Coding style
+Write code in accordance to:
++ [Google's R style guide](https://google.github.io/styleguide/Rguide.xml), or
++ [The tidyverse style guide](https://style.tidyverse.org/)
+
+## .Rprofile setup
+
+## Saving and printing object
+
 
 # RStudio hidden gems
+
+## RStudio project
+
+- Create new directory
+- From existing directory
+- From git
+
+## Global options
++ Do not save and load .Rdata
+
+
+## Layouts and theme
++ Console on right
++ Change theme
++ Use fonts with ligature
+
+## The power of Tab
++ Autocompletion
++ File navigation
+
+## Handy shortcut
++ `Ctrl + Enter` on highlighted example code at help page
++ `Ctrl + Shift + [number]`
++ `Ctrl + Up` at console
++ `Alt + Up/Down` at source editor
++ `Alt + Shift + Up/Down` at source editor
++ `Ctrl + Shift + F10`
+
+## Addins 
++ `syler`
++ `datapasta`
++ `reprex`
++ `clipr`
++ `
