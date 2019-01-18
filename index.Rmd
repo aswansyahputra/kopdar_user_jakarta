@@ -8,6 +8,8 @@ output:
     lib_dir: libs
     css: xaringan-themer.css
     nature:
+      ratio: "16:9"
+      highlightLanguage: r
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -19,64 +21,215 @@ options(htmltools.dir.version = FALSE)
 
 ```{r xaringan-themer, include=FALSE}
 library(xaringanthemer)
-solarized_dark(
+# extra_css <- list(
+#   ".title-slide h1" = list(
+#     "padding-top" = "250px",
+#     "font-weight" = "normal",
+#     "font-size" = "45px",
+#     "line-height" = "0.05",
+#     "text-align" = "left",
+#     "text-shadow" = "none",
+#     "padding-bottom" = "18px",
+#     "margin-bottom" = "18px"
+#   ),
+#   ".title-slide h2" = list(
+#     "color" = "#2c89a0",
+#     "font-size" = "35px",
+#     "text-align" = "left",
+#     "text-shadow" = "none",
+#     "padding-top" = "0px",
+#     "margin-top" = "0px"
+#   ),
+#   ".title-slide h3" = list(
+#     "color" = "#37c871",
+#     "font-size" = "28px",
+#     "font-weight" = "normal",
+#     "text-align" = "left",
+#     "text-shadow" = "none",
+#     "padding" = "0px",
+#     "margin" = "0px",
+#     "line-height" = "1"
+#   ),
+#   ".title-slide .remark-slide-number" = list(
+#     "text-shadow" = "none"
+#   ),
+#   ".remark-slide-number" = list(
+#     "position" = "inherit",
+#     "font-size" =  "10pt",
+#     "margin-bottom" =  "-11.6px",
+#     "margin-right" =  "10px",
+#     "color" =  "#FFFFFF",
+#     "opacity" =  "0"
+#   ),
+#   ".remark-slide-content" = list(
+#     "padding-left" =  "100px"
+#   )
+# )
+# 
+# write_xaringan_theme(
+#   code_font_family = "Fira Code",
+#   code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
+#   title_slide_background_image = "assets/logo.svg",
+#   title_slide_background_size = "450px",
+#   title_slide_background_position = "15% 35%",
+#   title_slide_background_color = "#ffffff",
+#   title_slide_text_color = "#162c4f",
+#   inverse_background_color = "#162c4f",
+#   header_color = "#2c89a0",
+#   header_font_google = google_font("Lato"),
+#   header_h1_font_size = "70px",
+#   text_color = "#333333",
+#   table_row_even_background_color = "#e5feef",
+#   extra_css = extra_css
+# )
+
+mono_light(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
   code_font_family = "Fira Code",
-  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
-)
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
+  title_slide_background_image = "assets/logo.png",
+  title_slide_background_size = "200px",
+  title_slide_background_position = "7% 10%"
+  )
 ```
 
-# Learn R in R
+class: inverse, center, middle
+
+# dplyr::glimpse(aswan)
+
+---
+
+background-image: url("assets/aswan.jpg")
+background-size: 350px
+background-position: 80% 50%
+
+## Muhammad Aswan Syahputra
+
+.pull-left[
+
+* Founder of [Sensolution.ID](https://sensolution.id)
+* Expertise in sensory science and consumer studies
+* Education:
+  + Master in Sensory Science, Wageningen University and Research, The Netherlands
+  + Bachelor in Food Technology, Universitas Brawijaya, Indonesia
+* [Telegram: @aswansyahputra](https://t.me/aswansyahputra)
+* [aswansyahputra@sensolution.id](mailto:aswansyahputra@sensolution.id)
+]
+
+---
+background-image: url("assets/sensory_science.jpg")
+background-size: contain
+
+---
+class: inverse, center, middle
+
+# dplyr::summarise(me_with_r)
+
+---
+background-image: url("assets/prefmap.png")
+background-size: contain
+
+---
+background-image: url("assets/attribute.png")
+background-size: contain
+
+---
+background-image: url("assets/jop.png")
+background-size: contain
+
+---
+background-image: url("assets/target_diagram.png")
+background-size: contain
+
+---
+background-image: url("assets/sensehub.png")
+background-size: contain
+
+---
+class: inverse, center, middle
+
+# R tips and tricks
+
+---
+
+## Some tips
+
+* Learn R using R
 ```
 install.packages("swirl")
 ```
-# For repetitive
+* `Ctrl + Enter` on example code
+* `x <- rnorm(100)` versus `(x <- rnorm(100))`
+* For repetitive task
 ```
 install.packages("usethis")
 ```
 
-# R tips and tricks
-## Coding style
-Write code in accordance to:
-+ [Google's R style guide](https://google.github.io/styleguide/Rguide.xml), or
-+ [The tidyverse style guide](https://style.tidyverse.org/)
+---
+## Some tips
 
-## .Rprofile setup
+* Play with `.RProfile`
 
-## Saving and printing object
+```
+message("Hi your_name, welcome to R!")
+if(interactive()) {
+  suppressMessages(require(usethis))
+  try(fortunes::fortune(), silent = TRUE)
+}
 
+options(
+  prompt = "indo-R > ",
+  continue = "  ",
+  useFancyQuotes = FALSE,
+  max.print = 100 
+)
+```
+
+* Coding style
+  + [Google's R style guide](https://google.github.io/styleguide/Rguide.xml), or
+  + [The tidyverse style guide](https://style.tidyverse.org/)
+
+---
+class: inverse, center, middle
 
 # RStudio hidden gems
 
-## RStudio project
+---
 
-- Create new directory
-- From existing directory
-- From git
+## Outline
 
-## Global options
-+ Do not save and load .Rdata
+* RStudio project
+* Installing package
+* Using source editor (R script, Rmarkdown)
+* Setup Global Options
+* Layout and theme
+* The friendly `Tab`
+* Handy shortcuts
+* Addins
+  + `syler`
+  + `datapasta`
+  + `reprex`
+  + `clipr`
+  + `ggThemeAssist`
+* Cheatsheets
 
-
-## Layouts and theme
-+ Console on right
-+ Change theme
-+ Use fonts with ligature
-
-## The power of Tab
-+ Autocompletion
-+ File navigation
-
-## Handy shortcut
-+ `Ctrl + Enter` on highlighted example code at help page
+---
+## Handy shortcuts
++ `Ctrl + Enter`
 + `Ctrl + Shift + [number]`
-+ `Ctrl + Up` at console
-+ `Alt + Up/Down` at source editor
-+ `Alt + Shift + Up/Down` at source editor
++ `Ctrl + Up`
++ `Alt + Up/Down`
++ `Alt + Shift + Up/Down`
++ `Ctrl + D`
++ `Ctrl + I`
++ `Ctrl + Shift + A`
 + `Ctrl + Shift + F10`
++ `Ctrl + Alt + B`
++ `Ctrl + .`
 
-## Addins 
-+ `syler`
-+ `datapasta`
-+ `reprex`
-+ `clipr`
-+ `
+---
+class: inverse, center, middle
+
+# Thanks!

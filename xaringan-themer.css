@@ -16,23 +16,23 @@
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
 
 
 body {
-  font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
-  font-weight: normal;
-  color: #839496;
+  font-family: Montserrat, 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-weight: 300;
+  color: #13393A;
 }
 h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
+  font-family: Josefin Sans;
   font-weight: normal;
-  color: #dc322f;
+  color: #1c5253;
 }
 .remark-slide-content {
-  background-color: #002b36;
+  background-color: #E8EDED;
   font-size: 20px;
   
   
@@ -56,18 +56,18 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: 1em;
-  color: #6c71c4;
+  color: #1c5253;
   
   
 }
 .remark-slide-number {
-  color: #586e75;
+  color: #1c5253;
   opacity: 1;
   font-size: 0.9em;
 }
-strong{color:#d33682;}
+strong{color:#1c5253;}
 a, a > code {
-  color: #b58900;
+  color: #1c5253;
   text-decoration: none;
 }
 .footnote {
@@ -78,24 +78,24 @@ a, a > code {
   font-size: 0.9em;
 }
 .remark-code-line-highlighted {
-  background-color: #268bd240;
+  background-color: rgba(255,255,0,0.5);
 }
 .inverse {
-  background-color: #fdf6e3;
-  color: #002b36;
+  background-color: #1c5253;
+  color: #E8EDED;
   
 }
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #002b36;
+  color: #E8EDED;
 }
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
-  color: #002b36;
+  color: #E8EDED;
 }
 .title-slide {
-  background-color: #fdf6e3;
-  
-  
-  
+  background-color: #1c5253;
+  background-image: url(assets/logo.png);
+  background-size: 200px;
+  background-position: 7% 10%;
 }
 .title-slide .remark-slide-number {
   display: none;
@@ -107,10 +107,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #586e75;
+  color: #1c525399;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #93a1a1;
+  color: #1c5253;
 }
 .right-column {
   width: 75%;
@@ -132,35 +132,35 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #cb4b16;
+  border-left: solid 5px #1c525380;
   padding-left: 1em;
 }
 .remark-slide table {
   margin: auto;
-  border-top: 1px solid #657b83;
-  border-bottom: 1px solid #657b83;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
 }
-.remark-slide table thead th { border-bottom: 1px solid #657b83; }
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
-.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #073642 }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #D1DCDC }
 table.dataTable tbody {
-  background-color: #002b36;
-  color: #839496;
+  background-color: #E8EDED;
+  color: #13393A;
 }
 table.dataTable.display tbody tr.odd {
-  background-color: #002b36;
+  background-color: #E8EDED;
 }
 table.dataTable.display tbody tr.even {
-  background-color: #073642;
+  background-color: #D1DCDC;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
-  color: #839496;
+  color: #13393A;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
-  color: #839496 !important;
+  color: #13393A !important;
 }
 
 @page { margin: 0; }
