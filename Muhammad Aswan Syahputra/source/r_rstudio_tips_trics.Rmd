@@ -21,74 +21,11 @@ options(htmltools.dir.version = FALSE)
 
 ```{r xaringan-themer, include=FALSE}
 library(xaringanthemer)
-# extra_css <- list(
-#   ".title-slide h1" = list(
-#     "padding-top" = "250px",
-#     "font-weight" = "normal",
-#     "font-size" = "45px",
-#     "line-height" = "0.05",
-#     "text-align" = "left",
-#     "text-shadow" = "none",
-#     "padding-bottom" = "18px",
-#     "margin-bottom" = "18px"
-#   ),
-#   ".title-slide h2" = list(
-#     "color" = "#2c89a0",
-#     "font-size" = "35px",
-#     "text-align" = "left",
-#     "text-shadow" = "none",
-#     "padding-top" = "0px",
-#     "margin-top" = "0px"
-#   ),
-#   ".title-slide h3" = list(
-#     "color" = "#37c871",
-#     "font-size" = "28px",
-#     "font-weight" = "normal",
-#     "text-align" = "left",
-#     "text-shadow" = "none",
-#     "padding" = "0px",
-#     "margin" = "0px",
-#     "line-height" = "1"
-#   ),
-#   ".title-slide .remark-slide-number" = list(
-#     "text-shadow" = "none"
-#   ),
-#   ".remark-slide-number" = list(
-#     "position" = "inherit",
-#     "font-size" =  "10pt",
-#     "margin-bottom" =  "-11.6px",
-#     "margin-right" =  "10px",
-#     "color" =  "#FFFFFF",
-#     "opacity" =  "0"
-#   ),
-#   ".remark-slide-content" = list(
-#     "padding-left" =  "100px"
-#   )
-# )
-# 
-# write_xaringan_theme(
-#   code_font_family = "Fira Code",
-#   code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
-#   title_slide_background_image = "assets/logo.svg",
-#   title_slide_background_size = "450px",
-#   title_slide_background_position = "15% 35%",
-#   title_slide_background_color = "#ffffff",
-#   title_slide_text_color = "#162c4f",
-#   inverse_background_color = "#162c4f",
-#   header_color = "#2c89a0",
-#   header_font_google = google_font("Lato"),
-#   header_h1_font_size = "70px",
-#   text_color = "#333333",
-#   table_row_even_background_color = "#e5feef",
-#   extra_css = extra_css
-# )
 
 mono_light(
   base_color = "#1c5253",
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_family = "Fira Code",
-  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
   title_slide_background_image = "assets/logo.png",
   title_slide_background_size = "200px",
   title_slide_background_position = "7% 10%"
@@ -200,12 +137,18 @@ class: inverse, center, middle
 
 ## Outline
 
-* RStudio project
-* Installing package
+* RStudio project, use version control!
+* Installing and updating package, hit `Tools` menu
 * Using source editor (R script, Rmarkdown)
+  + Use section for R script, `Ctrl + Shift + R`
+  + Please name your chunks!
 * Setup Global Options
-* Layout and theme
+  + Do not save or load `.Rdata`
+  + Adjust pane layout, console to right
+  + Change theme and font, e.g. `Fira Code` font family
 * The friendly `Tab`
+  + File navigation
+  + Autocompletion
 * Handy shortcuts
 * Addins
   + `syler`
@@ -213,21 +156,24 @@ class: inverse, center, middle
   + `reprex`
   + `clipr`
   + `ggThemeAssist`
-* Cheatsheets
+* Cheatsheets, hit `Help - Cheatsheets`
 
 ---
 ## Handy shortcuts
-+ `Ctrl + Enter`
-+ `Ctrl + Shift + [number]`
-+ `Ctrl + Up`
-+ `Alt + Up/Down`
-+ `Alt + Shift + Up/Down`
-+ `Ctrl + D`
-+ `Ctrl + I`
-+ `Ctrl + Shift + A`
-+ `Ctrl + Shift + F10`
-+ `Ctrl + Alt + B`
-+ `Ctrl + .`
+* `Alt + -`, for assignment operator `<-`
+* `Ctrl + Shift + M`, for pipe operator `%>%`
+* `Ctrl + Enter`, run example on help page
+* `Ctrl + Shift + [number]`, change focus
+* `Ctrl + Up`, search for code history on console or editor pane
+* `Alt + Up/Down`, move code to above or below
+* `Alt + Shift + Up/Down`, copy code to above or below
+* `Ctrl + D`, delete current line
+* `Ctrl + I`, reindent code
+* `Ctrl + Shift + A`, reformat code
+* `Ctrl + Shift + F10`, restart R session
+* `Ctrl + Alt + B`, run code up to current line
+* `Ctrl + .`, find file
+* `Alt + Shift + K`, shortcuts quick reference 
 
 ---
 class: inverse, center, middle

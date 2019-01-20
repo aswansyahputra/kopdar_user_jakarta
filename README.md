@@ -1,4 +1,4 @@
-# kopdar_user_jakarta
+# Kopi Darat useR! Jakarta
 
-The goal of kopdar_user_jakarta is to ...
+Repositori ini berisi materi-materi yang disampaikan pada Kopi Darat useR! Jakarta pada Sabtu, 19 Januari 2019 di Microsoft Indonesia.
 
